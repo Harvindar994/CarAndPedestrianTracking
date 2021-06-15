@@ -39,6 +39,10 @@ while True:
 
         # displaying the image that we loaded.
         cv2.imshow("Cars Image", frame)
-        cv2.waitKey(1)
+        key = cv2.waitKey(1)
+        if key == 81 or key == 113:
+            break
+
+video.release()
 
 
